@@ -1,0 +1,728 @@
+/* main_banner */
+.main_banner {
+    width: calc(100% - 100px);
+    height: calc(100vh - 100px - 50px);
+    margin: 100px auto 50px;
+    overflow: hidden;
+    position: relative;
+}
+.button_area {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+    cursor: pointer;
+}
+.left_button_area {
+    left: 0;
+}
+.right_button_area {
+    right: 0;
+}
+.banner_btn {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: #fff;
+    font-family: 'EB Garamond', 'Noto Sans KR', 'Noto Serif KR';
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    pointer-events: none;
+    cursor: pointer;
+
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.banner_btn span {
+    font-weight: 900;
+}
+.scale_border {
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.3s;
+}
+.slide_banner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+
+}
+.slide_banner1 {
+    left: 0;
+}
+.slide_banner2,
+.slide_banner3 {
+    left: 100%;
+}
+.banner_bg {
+    width: 100%;
+    height: 100%;
+
+    transition: transform 3s;
+}
+.banner_bg1 {
+    background: url(../img/main_banner/main_banner1.jpg) no-repeat center / cover;
+}
+.banner_bg2 {
+    background: url(../img/main_banner/main_banner2.jpg) no-repeat center / cover;
+}
+.banner_bg3 {
+    background: url(../img/main_banner/main_banner3.jpg) no-repeat center / cover;
+}
+.banner_txt {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+    color: #fff;
+    pointer-events: none;
+    font-family: 'EB Garamond', 'Noto Sans KR', 'Noto Serif KR';
+}
+.banner_txt span {
+    display: inline-block;
+    font-size: 24px;
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 1s, opacity 1s;
+}
+.banner_txt h2 {
+    font-size: 60px;
+    margin: 15px 0 0;
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 1s, opacity 1s;
+}
+.banner_indi_box {
+    width: 50%;
+    height: 140px;
+    background-color: #fff;
+    padding: 20px 0 0 100px;
+    box-sizing: border-box;
+    display: flex;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 9000;
+}
+.main_banner_indi {
+    width: calc(100% / 3);
+    height: 100%;
+    opacity: 0.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+
+    font-family: 'EB Garamond', 'Noto Sans KR', 'Noto Serif KR';
+}
+.main_banner_indi p {
+    margin: 0;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #c9ab81;
+}
+.main_banner_indi b {
+    display: block;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.clicked_indi {
+    opacity: 1;
+}
+/**********swiper**********/
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-button {
+    transform: translateY(100px);
+    transition: all 1.2s;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: gray;
+}
+.button_circle {
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgba(201, 171, 129, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+}
+.swiper-pagination {
+    margin-bottom: 200px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1.2s;
+}
+.swiper-pagination-bullet {
+    margin: 0 14px !important;
+    width: 5px;
+    height: 5px;
+    background-color: #666;
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #333;
+    transform: scale(1.4);
+}
+/************best****************/
+.best {
+    padding: 150px 0;
+    position: relative;
+}
+.best_section {
+    width: calc(100% - 37px * 2);
+    max-width: 1400px;
+    margin: 120px auto;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1.2s;
+}
+.best_section_item1 > .best_img {
+    background: url(../img/artist/VincentVanGogh/VincentVanGogh_img5.jpg) no-repeat center / cover;
+}
+.best_section_item2 > .best_img {
+    background: url(../img/artist/GustavKlimt/GustavKlimt_img2.jpg) no-repeat center / cover;
+}
+.best_section_item3 > .best_img {
+    background: url(../img/artist/ClaudeMonet/ClaudeMonet_img4.png) no-repeat center / cover;
+}
+.best_section_item4 > .best_img {
+    background: url(../img/artist/GustavKlimt/GustavKlimt_img4.png) no-repeat center / cover;
+}
+.best_section_item5 > .best_img {
+    background: url(../img/artist/ClaudeMonet/ClaudeMonet_img5.png) no-repeat center / cover;
+}
+.best_img {
+    height: 27vw;
+    position: relative;
+}
+.best_img:hover > .option_pan{
+    opacity: 1;
+    right: 30px;
+}
+.best_sec_txt {
+    margin-top: 30px;
+    font-family: 'EB Garamond', 'Noto Serif KR', 'Noto Sans KR';
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    white-space: nowrap;
+    line-height: 30px;
+    text-align: left;
+}
+.best_sec_desc {
+    margin-top: 20px;
+    text-align: left;
+}
+.best_sec_desc span {
+    font-size: 16px;
+    color: #c9ab81;
+    line-height: 20px;
+    font-family: 'Noto Serif KR', 'Noto Sans KR', 'EB Garamond';
+}
+.best_sec_desc p {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #888;
+    line-height: 20px;
+}
+.best_sec_price {
+    margin-top: 30px;
+    line-height: 30px;
+    font-size: 21px;
+    color: #333;
+    font-family: 'Noto Serif KR', 'EB Garamond', 'Noto Sans KR';
+    font-weight: 400;
+    text-align: left;
+    vertical-align: middle;
+}
+.best_sec_price b {
+    margin-right: 5px;
+    font-size: 36px;
+    font-family: 'EB Garamond', 'Noto Serif KR', 'Noto Sans KR';
+    font-weight: 500;
+}
+
+.pick {
+    padding: 100px 0 200px;
+    margin: 0 50px;
+    background: url(../img/pick_bg.jpg) no-repeat center / cover;
+}
+.pick_section {
+    width: calc(100% - 100px);
+    height: 600px;
+    max-width: 1400px;
+    margin: 50px auto 0;
+}
+.pick_tab {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1.2s;
+}
+.pick_tab_btn {
+    font-size: 18px;
+    color: #666;
+    line-height: 25px;
+    position: relative;
+    cursor: pointer;
+}
+.pick_tab_btn_L::after {
+    content: "";
+    width: 1px;
+    height: 12px;
+    background-color: #bbb;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translate(-50%, -50%);
+}
+.pick_btn_on {
+    color: #333;
+    font-weight: 500;
+}
+.pick_container {
+    height: 500px;
+    margin-top: 75px;
+    margin-left: 60px;
+    box-sizing: border-box;
+    position: relative;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1.2s;
+}
+.pick_article {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 1px 3px 13px rgba(0,0,0,0.13);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.pick_article2 {
+    display: none;
+}
+.pick_img {
+    width: calc(50% - 110px);
+    height: 100%;
+    position: absolute;
+    bottom: -60px;
+    left: -60px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+}
+.pick_article1 > .pick_img {
+    background: url(../img/artist/GustavKlimt/GustavKlimt_img1.png) no-repeat center / cover;
+}
+.pick_article2 > .pick_img {
+    background: url(../img/artist/ClaudeMonet/ClaudeMonet_img3.png) no-repeat center / cover;
+}
+.pick_desc {
+    width: calc(50% - 60px);
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pick_artist {
+    margin-bottom: 8px;
+    color: #c9ab81;
+    letter-spacing: -0.7px;
+    font-family: 'Noto Serif KR', 'Noto Sans KR', 'EB Garamond';
+    transform: translateY(40px);
+    opacity: 0;
+}
+.pick_title {
+    line-height: 46px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    font-family: 'Noto Serif KR', 'Noto Sans KR', 'EB Garamond';
+    margin-bottom: 30px;
+    word-break: keep-all;
+    transform: translateY(40px);
+    opacity: 0;
+    animation-delay: 0.05s;
+}
+.pick_info{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-height: 78px;
+    font-size: 16px;
+    color: #666;
+    line-height: 26px;
+    word-break: keep-all;
+    transform: translateY(40px);
+    opacity: 0;
+    animation-delay: 0.1s;
+}
+
+.pick_more_btn {
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    position: static;
+    transform: translate(0, 0);
+    font-size: 18px;
+    margin-top: 50px;
+    transform: translateY(40px);
+    opacity: 0;
+    animation-delay: 0.15s;
+}
+@keyframes pick_ani {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.pick_ani {
+    animation-name: pick_ani;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.new {
+    margin: 95px 0 75px;
+    position: relative;
+}
+.new_section {
+    width: calc(100% - 37px * 2);
+    max-width: 1400px;
+    margin: 120px auto;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1.2s;
+}
+.new_section_item1 > .new_img {
+    background: url(../img/artist/PierreBonnard/PierreBonnard_img1.jpg) no-repeat center / cover;
+}
+.new_section_item2 > .new_img {
+    background: url(../img/artist/VincentVanGogh/VincentVanGogh_img3.jpg) no-repeat center / cover;
+}
+.new_section_item3 > .new_img {
+    background: url(../img/artist/ClaudeMonet/ClaudeMonet_img1.jpg) no-repeat center / cover;
+}
+.new_section_item4 > .new_img {
+    background: url(../img/artist/ClaudeMonet/ClaudeMonet_img2.png) no-repeat center / cover;
+}
+.new_section_item5 > .new_img {
+    background: url(../img/artist/GustavKlimt/GustavKlimt_img3.png) no-repeat center / cover;
+}
+
+.new_img {
+    height: 37vw;
+    position: relative;
+}
+.new_txt {
+    width: calc(100% - 60px);
+    height: 80px;
+    margin-left: -1px;
+    text-align: left;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.new_artist {
+    line-height: 26px;
+    color: #c9ab81;
+    font-size: 16px;
+    font-family: 'Noto Serif KR', 'Noto Sans KR', 'EB Garamond';
+    letter-spacing: -0.7px;
+    margin-top: 20px;
+}
+.new_title {
+    width: 100%;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Noto Serif KR', 'Noto Sans KR', 'EB Garamond';
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #333;
+    overflow: hidden;
+
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+.new_desc {
+    height: 78px;
+    line-height: 26px;
+    color: #666;
+    font-size: 16px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-top: 25px;
+}
+
+.gallery {
+    margin: 0 50px;
+    padding: 150px 0;
+    background: url(../img/gallery_bg.jpg) no-repeat fixed center / cover;
+}
+.gallery_container {
+    width: calc(100% - 100px);
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+.gallery_container > h2 {
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    color: #211e1f;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: 'EB Garamond', 'Noto Sans KR', 'Noto Serif KR';
+}
+.gallery_container > h2 > span {
+    display: inline-block;
+    font-size: 40px;
+    opacity: 0;
+    transform: rotateY(-90deg);
+}
+.empty{
+    display: inline-block;
+    width: 15px;
+}
+.gallery_container > p {
+    line-height: 28px;
+    margin: 0;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Noto Serif KR', 'Noto Sans KR', 'EB Garamond';
+    color: #333;
+    letter-spacing: -0.5px;
+    word-break: keep-all;
+}
+.gallery_more_btn {
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 50px;
+    font-size: 18px;
+    position: static;
+    transform: translate(0, 0);
+}
+
+@keyframes rotate_ani {
+    0% {
+        opacity: 0;
+        transform: rotateY(-90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0);
+    }
+}
+.rotate_ani {
+    animation: rotate_ani 0.2s ease forwards;
+}
+
+.review {
+    padding: 150px 0;
+    position: relative;
+}
+.review_container {
+    display: flex;
+    gap: 30px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1.2s;
+}
+.review_section {
+    width: calc(100% - 100px);
+    max-width: 1400px;
+    margin: 90px auto 0;
+}
+.review_section_item {
+    width: calc(100% - (30px * 2));
+}
+.review_section_item1 > .review_img {
+    background: url(../img/artist/GustavKlimt/GustavKlimt_img4.png) no-repeat center / cover;
+}
+.review_section_item2 > .review_img {
+    background: url(../img/artist/GustavKlimt/GustavKlimt_img2.jpg) no-repeat center / cover;
+}
+.review_section_item3 > .review_img {
+    background: url(../img/artist/VincentVanGogh/VincentVanGogh_img2.jpg) no-repeat center / cover;
+}
+.review_img {
+    height: 27vw;
+    position: relative;
+}
+.review_date {
+    width: 53px;
+    height: 53px;
+    line-height: 13px;
+    font-size: 13px;
+    color: #c9ab81;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.review_date > b {
+    line-height: 24px;
+    font-size: 24px;
+}
+.review_desc {
+    margin-top: 30px;
+}
+.review_title {
+    line-height: 18px;
+    font-size: 15px;
+    color: #c9ab81;
+    display: flex;
+    gap: 25px;
+}
+.review_title > span {
+    position: relative;
+}
+.review_title > span:nth-child(1)::after {
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: #c9ab81;
+    position: absolute;
+    top: 50%;
+    right: -13px;
+    transform: translateY(-50%);
+}
+.review_txt {
+    height: 52px;
+    line-height: 26px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.review_txt > p {
+    margin: 0;
+}
+
+@media screen and (max-width:1600px) {
+    .banner_indi_box {
+        padding-left: 50px;
+    }
+}
+@media screen and (max-width:1500px) {
+    .banner_indi_box {
+        width: 30%;
+        min-width: 180px;
+        height: 70px;
+        padding: 0;
+        text-align: center;
+    }
+    .main_banner_indi {
+        position: relative;
+    }
+    .main_banner_indi:not(:last-child)::after
+    {
+        content: "/";
+        font-weight: 700;
+        font-family: 'EB Garamond', 'Noto Sans KR', 'Noto Serif KR';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    .main_banner_indi > b {
+        display: none;
+    }
+    .main_banner_indi > p {
+        font-size: 24px;
+    }
+    
+    .banner_txt > span {
+        font-size: 20px;
+    }
+    .banner_txt > h2 {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .pick_img {
+        width: 50%;
+    }
+}
+@media screen and (max-width:1024px) {
+    .pick_img {
+        width: 52%;
+    }
+}

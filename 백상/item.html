@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/item.css">
+</head>
+<body>
+    <div id="wrap">
+        <div class="slide_close_pan"></div>
+        <div class="ham_slide">
+            <div class="slide_logo">
+                <a href="./index.html">백상 갤러리</a>
+            </div>
+            <div class="slide_close_btn"></div>
+            <div class="slide_main">
+                <div class="slide_menu">
+                    <span class="slide_menu_title">Product</span>
+                    <div class="slide_menu_item">
+                        <div class="slide_menu_item_list">
+                            <a href="#">
+                                베스트
+                                <div class="bar"></div>
+                            </a>
+                        </div>
+                        <div class="slide_menu_item_list">
+                            <a href="#">
+                                신상품
+                                <div class="bar"></div>
+                            </a>
+                        </div>
+                        <div class="slide_menu_item_list">
+                            <a href="#">
+                                사진작품
+                                <div class="bar"></div>
+                            </a>
+                        </div>
+                        <div class="slide_menu_item_list">
+                            <a href="#">
+                                그림작품
+                                <div class="bar"></div>
+                            </a>
+                        </div>
+                        <div class="slide_menu_item_list">
+                            <a href="#">
+                                작가별
+                                <div class="bar"></div>
+                            </a>
+                        </div>
+                        <div class="slide_menu_item_list">
+                            <a href="#">
+                                장르별
+                                <div class="bar"></div>
+                            </a>
+                        </div>
+                        <div class="slide_menu_item_list">
+                            <a href="#">
+                                주제별
+                                <div class="bar"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide_menu">
+                    <span class="slide_menu_title">About Baexang</span>
+                    <div class="slide_menu_item">
+                        <div class="slide_menu_item_list">
+                            <a href="#">
+                                회사소개
+                                <div class="bar"></div>
+                            </a>
+                        </div>
+                        <div class="slide_menu_item_list">
+                            <a href="#">
+                                갤러리
+                                <div class="bar"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide_menu">
+                    <span class="slide_menu_title">Community</span>
+                    <div class="slide_menu_item">
+                        <div class="slide_menu_item_list">
+                            <a href="#">
+                                공지사항
+                                <div class="bar"></div>
+                            </a>
+                        </div>
+                        <div class="slide_menu_item_list">
+                            <a href="#">
+                                이벤트
+                                <div class="bar"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide_menu">
+                    <span class="slide_menu_title">Service</span>
+                    <div class="slide_menu_item">
+                        <div class="slide_menu_item_list">
+                            <a href="#">
+                                FAQ
+                                <div class="bar"></div>
+                            </a>
+                        </div>
+                        <div class="slide_menu_item_list">
+                            <a href="#">
+                                제휴협찬문의
+                                <div class="bar"></div>
+                            </a>
+                        </div>
+                        <div class="slide_menu_item_list">
+                            <a href="#">
+                                1:1 문의
+                                <div class="bar"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide_footer">
+                <div class="slide_footer_menu">
+                    <div class="slide_footer_menu_item">
+                        <a href="#">로그인</a>
+                    </div>
+                    <div class="slide_footer_menu_item">
+                        <a href="#">회원가입</a>
+                    </div>
+                    <div class="slide_footer_menu_item">
+                        <a href="#">개인결제창</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="header">
+            <div id="ham"></div>
+            <div class="header_nav">
+                <div><a href="#">베스트</a></div>
+                <div><a href="#">신상품</a></div>
+                <div><a href="#">사진작품</a></div>
+                <div><a href="#">그림작품</a></div>
+                <div><a href="#">작가별</a></div>
+                <div><a href="#">장르별</a></div>
+                <div><a href="#">주제별</a></div>
+            </div>
+            <div class="logo">
+                <a href="./index.html">백상 갤러리</a>
+            </div>
+            <div class="header_info">
+                <div><a href="#">로그인</a></div>
+                <div><a href="#">회원가입</a></div>
+                <div><a href="#">주문조회</a></div>
+                <div><a href="#">장바구니<span class="basket_num">0</span></a></div>
+                <div><a href="#">고객센터</a></div>
+            </div>
+            <div class="search"><a href="#"></a></div>
+        </div>
+        <div id="main">
+            <div class="main_container" style="background-image: url(./img/item_bg/item_bg1.jpg);">
+                <div class="item_img"></div>
+                
+                <div class="bg_list">
+                    <div class="bg_list_btn bg_list_btn1"></div>
+                    <div class="bg_list_btn bg_list_btn2"></div>
+                    <div class="bg_list_btn bg_list_btn3"></div>
+                    <div class="bg_list_btn bg_list_btn4"></div>
+                    <div class="bg_list_btn bg_list_btn5"></div>
+                </div>
+            </div>
+            <div class="item_form">
+                <div class="form_title">
+                    <b></b>
+                    <p></p>
+                    <div class="sns_button">
+                        <div class="share_btn"></div>
+                        <div class="wish_btn"></div>
+                    </div>
+                </div>
+                <div class="item_option">
+                    <div class="option_step1">
+                        <div class="option_title">
+                            그림 사이즈 선택
+                            <p>*캔버스/래핑캔버스는 짧은변 최대 140cm</p>
+                        </div>
+                        <div class="select_size">
+                            사이즈를 선택하세요.
+                            <div class="grid"></div>
+                            <ul>
+                                <li>사이즈를 선택하세요.</li>
+                                <li>30.0cm x 30.0cm</li>
+                                <li>35.0cm x 35.0cm</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="option_step2">
+                        <div class="option_title">
+                            미디어 선택
+                        </div>
+                        <div class="select_area select_media">
+                            <div class="option media_option media_option1">
+                                <div class="option_img"></div>
+                                <p>캔버스</p>
+                            </div>
+                            <div class="option media_option media_option2">
+                                <div class="option_img"></div>
+                                <p>파인아트</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option_step3">
+                        <div class="option_title">
+                            마띠에르 리터치 선택
+                            <p>*그림면 질감 리터칭</p>
+                        </div>
+                        <div class="select_re">
+                            <div class="re_option re_option1">
+                                <div class="select_circle"></div>없음
+                            </div>
+                            <div class="re_option re_option2">
+                                <div class="select_circle"></div>선택
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option_step4">
+                        <div class="option_title">
+                            프레임 선택
+                            <p>*스크롤 사용시 다양한 프레임을 확인하실 수 있습니다.</p>
+                        </div>
+                        <div class="select_area select_frame">
+                            <div class="option frame_option frame_option1">
+                                <div class="option_img"></div>
+                                <p>캔버스판넬</p>
+                            </div>
+                            <div class="option frame_option frame_option2">
+                                <div class="option_img"></div>
+                                <p>래핑캔버스</p>
+                            </div>
+                            <div class="option frame_option frame_option3">
+                                <div class="option_img"></div>
+                                <p>띄움</p>
+                            </div>
+                            <div class="option frame_option frame_option4">
+                                <div class="option_img"></div>
+                                <p>원목 띄움</p>
+                            </div>
+                            <div class="option frame_option frame_option5">
+                                <div class="option_img"></div>
+                                <p>올림우드</p>
+                            </div>
+                            <div class="option frame_option frame_option6">
+                                <div class="option_img"></div>
+                                <p>앤틱D실버</p>
+                            </div>
+                            <div class="option frame_option frame_option7">
+                                <div class="option_img"></div>
+                                <p>원목베이지</p>
+                            </div>
+                            <div class="option frame_option frame_option8">
+                                <div class="option_img"></div>
+                                <p>관화이트</p>
+                            </div>
+                            <div class="option frame_option frame_option9">
+                                <div class="option_img"></div>
+                                <p>관우드</p>
+                            </div>
+                            <div class="option frame_option frame_option10">
+                                <div class="option_img"></div>
+                                <p>관블랙</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option_step5">
+                        <div class="option_title">
+                            매트(여백) 선택
+                            <p>*선택 가능한 경우에만 표시됩니다.</p>
+                        </div>
+                        <div class="select_area select_white_space">
+                            <div class="option white_space_option1">
+                                <div class="option_img"></div>
+                                <p>없음</p>
+                            </div>
+                            <div class="option white_space_option2">
+                                <div class="option_img"></div>
+                                <p>3cm</p>
+                            </div>
+                            <div class="option white_space_option3">
+                                <div class="option_img"></div>
+                                <p>6cm</p>
+                            </div>
+                            <div class="option white_space_option4">
+                                <div class="option_img"></div>
+                                <p>11cm</p>
+                            </div>
+                            <div class="option white_space_option5">
+                                <div class="option_img"></div>
+                                <p>15cm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="option_list_area">
+                    <div class="option_list">
+                        <div class="option_name"></div>
+                        <div class="option_count">
+                            <input type="button" value="ㅡ" id="minus">
+                            <input type="text" value="1" id="amount">
+                            <input type="button" value="+" id="plus">
+                        </div>
+                    </div>
+                </div>
+                <div class="final_price">
+                    <span>총 금액 :</span>
+                    <b id="total_price"></b> 원
+                </div>
+                <div class="order">
+                    <div class="more_btn order_btn color_silver">
+                        <a href="#">장바구니</a>
+                    </div>
+                    <div class="more_btn order_btn">
+                        <a href="#">구매하기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item_bottom_area">
+                <div id="item_info">
+                    <div class="item_header">
+                        <ul>
+                            <li class="header_select"><a href="#item_info">상품정보</a></li>
+                            <li><a href="#buy_info">구매정보</a></li>
+                            <li><a href="#user_info">상품후기(0)</a></li>
+                            <li><a href="#qa_info">상품문의(0)</a></li>
+                        </ul>
+                    </div>
+                    <div class="item_explain">
+                        <div class="section_title section_title_item">
+                            <span></span>
+                            <h2>
+                                <div class="title_line_L item_title_line_L"></div>
+                                <div class="title_line_R item_title_line_R"></div>
+                            </h2>
+                        </div>
+                        <div class="item_img_frame"></div>
+                        <div class="item_desc">
+                            <div class="item_desc_title">
+                                <b class="item_name"></b>
+                                <span class="artist_name">
+                                    <span class="eng_name"></span>
+                                    <span class="ko_name"></span>
+                                </span>
+                            </div>
+                            <div class="item_desc_con">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artist_explain">
+                        <div class="artist_img_frame">
+                            <div class="artist_img"></div>
+                        </div>
+                        <div class="artist_info"></div>
+                    </div>
+                    <div class="print_explain">
+                        <img src="./img/print_explain.jpg" alt="프린팅 방법">
+                    </div>
+                </div>
+                <div id="buy_info">
+                    <div class="item_header">
+                        <ul>
+                            <li><a href="#item_info">상품정보</a></li>
+                            <li class="header_select"><a href="#buy_info">구매정보</a></li>
+                            <li><a href="#user_info">상품후기(0)</a></li>
+                            <li><a href="#qa_info">상품문의(0)</a></li>
+                        </ul>
+                    </div>
+                    <div class="item_buy">
+                        <div class="section_title section_title_item">
+                            <span>Purchase Notes</span>
+                            <h2>구매시 주의 사항
+                                <div class="title_line_L item_title_line_L"></div>
+                                <div class="title_line_R item_title_line_R"></div>
+                            </h2>
+                        </div>
+                        <div class="item_buy_con">
+                            <dl>
+                                <dt>
+                                    <span>1</span>사이즈 오차
+                                </dt>
+                                <dd>백상갤러리 그림액자는 수제작 상품 특성상 제조 과정에서 크기에 따라 1~3cm 사이즈 오차가 발생할 수 있으며 이는 상품 고유의 하자가 아닙니다. 동일 사이즈의 상품을 나란히 거치하시려는 경우 등 정밀 사이즈 제작이 필요하신 경우는 구매시 배송메세지, 1:1 상담게시판에 요청사항을 남겨주시거나 고객센터로 연락주세요.</dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    <span>2</span>색감차이
+                                </dt>
+                                <dd>화면에서 보는 상품기술서 상의 색감과 실제 상품의 색감은 모니터와 미디어라는 매체의 특성, 사용자 기기의 고유 특성에 따라 차이가 날 수 있으며 이는 상품의 하자가 아닙니다. 동일한 색상이라도 사람에 따라서 느끼는 색의 차이가 존재하며 계절, 관람공간의 색상 및 조명 등 수많은 요소에 따라 다르게 보일 수 있기 때문에 색감, 느낌 등의 사유로 인한 A/S 및 교환/반품이 불가한 점 양해 부탁드립니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    <span>3</span>배송정책
+                                </dt>
+                                <dd>백상갤러리 명화액자는 각 그림별 비율을 지키기 위한 개별 주문 수제작 상품으로 공장 상황에 따라 주문일로 부터 출고까지 영업일 기준 5일내외 (마띠에르 리터치 상품은 영업일 20일이내 소요)의 제작기간이 소요됩니다. 넉넉하게 여유를 가지고 주문해 주시기 바랍니다.<br><br>* 주말 및 휴무일, 천재지변에 의한 기간은 배송기한에 포함되지 않습니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    <span>4</span>배송비
+                                </dt>
+                                <dd>백상갤러리의 배송비는 기본 4,000원이며 10만원 이상 구매시 무료로 배송됩니다. 액자류는 특성 및 크기에 따라 합포장이 어려우며, 배송비가 높은 점 양해 부탁드립니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    <span>5</span>보증 및 A/S
+                                </dt>
+                                <dd>백상갤러리 액자류 상품 AS기한은 구매일로부터 1년 입니다. 배송파손이나 초기 불량의 경우 무상 수리 또는 재제작 배송 처리되며, AS기간 이후는 소정의 비용으로 A/S 해드립니다. A/S신청 시 문제 부위의 사진을 잘 보이도록 촬영하여 카카오채널, 1:1상담, 휴대폰(010-0000-0000) 또는 이메일(baexang@baexang.co.kr)으로 보내주세요.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="item_buy">
+                        <div class="section_title section_title_item">
+                            <span>Exchange / Refund</span>
+                            <h2>교환 / 환불
+                                <div class="title_line_L item_title_line_L"></div>
+                                <div class="title_line_R item_title_line_R"></div>
+                            </h2>
+                        </div>
+                        <div class="item_buy_con">
+                            <dl>
+                                <dt>
+                                    <span>1</span>교환 환불 정책
+                                </dt>
+                                <dd>백상갤러리의 그림액자는 그림, 미디어, 크기, 프레임 등을 고객이 지정하여 제작하는 주문제작 상품으로 제품 특성상 소비자의 변심에 의한 상품교환 또는 환불이 불가합니다. 신중하게 구매해 주시기 바랍니다. 아크릴 압착 상품이 오배송 된 경우 보호필름을 제거하시면 상품성 상실로 반송 처리가 불가합니다. 오배송을 확인하시면 절대로 보호필름을 제거하지 마시고, 배송된 포장재에 그대로 재 포장하여 고객센터로 수거를 요청 해 주세요.</dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    <span>2</span>상품하자 / 오배송
+                                </dt>
+                                <dd>상품하자, 오배송의 경우 상품을 받으신 날로부터 7일 이내(신청일 기준) 교환 환불이 가능합니다. 배송중 파손 또는 상품 초기 불량의 경우 수거 후 AS처리 되거나, 액자류 특성상 수거 없이 재제작 배송 될 수 있습니다. 상품하자, 오배송에 따른 임의 반송 시 액자류 특성상 상품이 파손되기 쉬으므로 반드시 받으신 포장을 활용하여 재포장 해 주시고 고객센터로 수거를 요청 해 주세요.</dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    <span>3</span>주문취소 / 환불
+                                </dt>
+                                <dd>주문제작상품 특성상 주문이 접수 이후 제작이 시작되면 배송 이전이라도 주문취소에 따른 전액 환불이 불가합니다. 반드시 주문을 취소하셔야 하는 경우, 인쇄공정 진행시 상품금액의 30%, 프레임 공정 진행시 상품금액의 70%를 차감한 나머지 금액을 환불 받으실 수 있습니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    <span>4</span>배송비
+                                </dt>
+                                <dd>상품의 하자로 인한 반품, A/S등을 위해 반송이 필요한 경우 반드시 고객센터에 문의/요청 해주세요. 임의 반송시 상품이 파손/훼손되기 쉬우며, 이경우 고객과실로 반품, A/S등의 조치를 받기 어려울 수 있습니다.<br><br>* 반송주소 : 서울 강남구 강남대로 1234 (백상갤러리)</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div id="user_info">
+                    <div class="item_header">
+                        <ul>
+                            <li><a href="#item_info">상품정보</a></li>
+                            <li><a href="#buy_info">구매정보</a></li>
+                            <li class="header_select"><a href="#user_info">상품후기(0)</a></li>
+                            <li><a href="#qa_info">상품문의(0)</a></li>
+                        </ul>
+                    </div>
+                    <div class="item_grade">
+                        <div class="item_grade_L">
+                            <b>4.8</b>
+                            <p>
+                                <b>100%</b>의 구매자들이 이 상품을 좋아합니다.
+                            </p>
+                        </div>
+                        <div class="item_grade_R">
+                            <ul>
+                                <li>
+                                    <div class="grade_star">
+                                        <img src="./img/grade/star5.png" alt="5점">
+                                    </div>
+                                    <div class="grade_txt">아주 좋아요</div>
+                                    <div class="grade_graph">
+                                        <div class="grade_bar" style="width: 70%;"></div>
+                                    </div>
+                                    <div class="grade_percent">70%</div>
+                                </li>
+                                <li>
+                                    <div class="grade_star">
+                                        <img src="./img/grade/star4.png" alt="4점">
+                                    </div>
+                                    <div class="grade_txt">맘에 들어요</div>
+                                    <div class="grade_graph">
+                                        <div class="grade_bar" style="width: 20%;"></div>
+                                    </div>
+                                    <div class="grade_percent">20%</div>
+                                </li>
+                                <li>
+                                    <div class="grade_star">
+                                        <img src="./img/grade/star3.png" alt="3점">
+                                    </div>
+                                    <div class="grade_txt">보통이예요</div>
+                                    <div class="grade_graph">
+                                        <div class="grade_bar" style="width: 7%;"></div>
+                                    </div>
+                                    <div class="grade_percent">7%</div>
+                                </li>
+                                <li>
+                                    <div class="grade_star">
+                                        <img src="./img/grade/star2.png" alt="2점">
+                                    </div>
+                                    <div class="grade_txt">그냥 그래요</div>
+                                    <div class="grade_graph">
+                                        <div class="grade_bar" style="width: 3%;"></div>
+                                    </div>
+                                    <div class="grade_percent">3%</div>
+                                </li>
+                                <li>
+                                    <div class="grade_star">
+                                        <img src="./img/grade/star1.png" alt="1점">
+                                    </div>
+                                    <div class="grade_txt">별로예요</div>
+                                    <div class="grade_graph">
+                                        <div class="grade_bar" style="width: 0%;"></div>
+                                    </div>
+                                    <div class="grade_percent zero_per">0%</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="use_title">
+                            <h2>Review</h2>
+                            <div class="use_order">
+                                <a href="#">최신순</a>
+                                <a href="#">평점높은순</a>
+                                <a href="#">평점낮은순</a>
+                            </div>
+                        </div>
+                        <div class="use_area">
+                            <img src="./img/icon/info_icon.png" alt="정보아이콘">
+                            <p>사용후기가 없습니다.</p>
+                        </div>
+                        <div class="more_btn use_btn">
+                            <a href="#">사용후기 쓰기</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="qa_info">
+                    <div class="item_header">
+                        <ul>
+                            <li><a href="#item_info">상품정보</a></li>
+                            <li><a href="#buy_info">구매정보</a></li>
+                            <li><a href="#user_info">상품후기(0)</a></li>
+                            <li class="header_select"><a href="#qa_info">상품문의(0)</a></li>
+                        </ul>
+                    </div>
+                    <div class="item_qa">
+                        <div class="use_title">
+                            <div class="use_title_L">
+                                <h2>Q&A</h2>
+                                <p>상품문의를 제외한 반품, 교환, 취소 등에 관한 문의는 <a href="#">고객센터 1:1 문의 게시판</a> 을 이용해주시기 바랍니다.</p>
+                            </div>
+                            <div class="more_btn use_btn">
+                                <a href="#">상품 문의하기</a>
+                            </div>
+                        </div>
+                        <div class="use_area">
+                            <img src="./img/icon/info_icon.png" alt="정보아이콘">
+                            <p>사용후기가 없습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footer_inner">
+                <div class="footer_policy">
+                    <span>
+                        <a href="#">개인정보처리방침</a>
+                    </span>
+                    <span>
+                        <a href="#">이용약관</a>
+                    </span>
+                    <span>
+                        <a href="#">회사소개</a>
+                    </span>
+                </div>
+                <div class="footer_address">
+                    <p>
+                        <span>대표자 : 권순상</span>
+                        <span>사업자 등록번호 : 137-81-30071</span>
+                    </p>
+                    <p>
+                        <span>주소 : 경기도 고양시 일산동구 산황로 178-15</span>
+                        <span>EMAIL : gbaexang@gmail.com</span>
+                        <span>TEL : 031-954-9541</span>
+                        <span>FAX : 031-977-9540</span>
+                    </p>
+                </div>
+                <div class="copyright">
+                    Copyright © 2022 Baexang Gallery. All rights reserved.
+                </div>
+            </div>
+        </div>
+        <div class="top_btn">
+            <a href="#">맨 위로 가기 버튼</a>
+        </div>
+    </div>
+
+<script src="./js/load_list.js"></script>
+<script src="./js/item.js"></script>
+<script src="./js/common.js"></script>
+</body>
+</html>
